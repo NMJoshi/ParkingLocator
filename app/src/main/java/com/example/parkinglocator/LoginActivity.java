@@ -84,6 +84,7 @@ public class LoginActivity extends AppCompatActivity {
                                             if(querySnapshot.getDocuments().size()==0){
                                                 Intent intent = new Intent(LoginActivity.this, ParkingOwnerMainActivity.class);
                                                 startActivity(intent);
+
                                                 finish();
                                             }
                                             else {
