@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "959343858862",
+    "firebase_url": "https://parkinglocator-6dc5f.firebaseio.com",
+    "project_id": "parkinglocator-6dc5f",
+    "storage_bucket": "parkinglocator-6dc5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959343858862:android:e4f6440bbbc175629b893f",
+        "android_client_info": {
+          "package_name": "com.example.parkinglocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959343858862-cs7j4oldkq9ki6astnbct536o61m5sjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDewfuw3Knwh737kO3dqmKsJi74MK6McI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959343858862-cs7j4oldkq9ki6astnbct536o61m5sjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

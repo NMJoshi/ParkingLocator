@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkingOwnerAddParkingDetails">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="6dp"
+        android:elevation="30dp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="18dp"
+        android:layout_margin="12dp"
+        android:layout_height="450dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardBackgroundColor="#CAC7C7"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="false"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="           Add Parking      "
+                android:textColor="@color/backColor"
+                android:textSize="30dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Enter Name"
+                android:textColor="@color/backColor"
+                android:textColorHint="@color/backColor" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter email"
+                android:textColor="@color/backColor"
+                android:textColorHint="@color/backColor" />
+
+            <EditText
+                android:id="@+id/edtPhoneNumber"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter PhoneNumber"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:textColor="@color/backColor"
+                android:textColorHint="@color/backColor" />
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:hint="Adress"
+                android:textColor="@color/backColor"
+                android:textColorHint="@color/backColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Two Wheeler"
+                    android:singleLine="true"
+                    android:textColor="@color/backColor"
+                    android:id="@+id/tvtwoWheeler"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/commentshape"
+                    android:textSize="15dp"
+                    android:hint="Enter number bike"
+                    android:inputType="phone"
+                    android:id="@+id/edtTwoWheeler"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Four Wheeler"
+                    android:singleLine="true"
+                    android:textColor="@color/backColor"
+                    android:id="@+id/tvfourWheeler"
+
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/edtFourWheeler"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:hint="Enter number Car"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/commentshape"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bccolor"
+                android:text="submit"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#403F3F"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvlatitude"
+               android:text="Latitude"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvlongitude"
+                android:text="Longitude"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
